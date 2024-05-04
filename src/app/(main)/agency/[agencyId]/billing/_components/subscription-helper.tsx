@@ -37,11 +37,10 @@ const SubscriptionHelper = ({ prices, customerId, planExists }: Props) => {
               },
             })
           )
-      }, [plan, customerId, planExists, prices, setOpen])
+           // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, [plan])
     
-  return (
-    <div></div>
-  )
+  return null
 }
 
 export default SubscriptionHelper
