@@ -22,7 +22,7 @@ const Navigation = async ({ user }: Props) => {
             height={40}
         />
         <span className='text-xl font-bold'>
-            Plura.
+            Levelupwork.
         </span>
       </aside>
       <nav className='hidden md:block absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]'>

@@ -62,6 +62,7 @@ const TagCreator = ({ getSelectedTags, subAccountId, defaultTags }: Props) => {
       }
       fetchData()
     }
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [subAccountId])
 
   const handleDeleteSelection = (tagId: string) => {

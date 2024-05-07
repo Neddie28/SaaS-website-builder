@@ -30,6 +30,7 @@ const FunnelEditorNavigation = ({funnelId, funnelPageDetails, subaccountId}: Pro
           type: 'SET_FUNNELPAGE_ID',
           payload: { funnelPageId: funnelPageDetails.id },
         })
+         // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [funnelPageDetails])
 
       const handleOnBlurTitleChange: FocusEventHandler<HTMLInputElement> = async (

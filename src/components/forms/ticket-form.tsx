@@ -61,6 +61,7 @@ const TicketForm = ({laneId, subaccountId, getNewTicket}: Props) => {
             }
             fetchData()
         }
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [subaccountId])
 
     useEffect(() => {
@@ -82,6 +83,7 @@ const TicketForm = ({laneId, subaccountId, getNewTicket}: Props) => {
           }
           fetchData()
         }
+         // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [defaultData])
 
       

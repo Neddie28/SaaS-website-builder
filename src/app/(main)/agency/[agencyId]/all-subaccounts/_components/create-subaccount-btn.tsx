@@ -8,7 +8,6 @@ import { Agency, AgencySidebarOption, SubAccount, User } from '@prisma/client'
 import { PlusCircleIcon } from 'lucide-react'
 import React from 'react'
 import { twMerge } from 'tailwind-merge'
-import {  agencySubscription, getAuthUserDetails } from '@/lib/queries'
 import clsx from 'clsx'
 
 type Props = {
@@ -26,13 +25,9 @@ type Props = {
     className: string
     agencyId: string
    
-    
-    // agency: Agency & {
-    //     SubAccount: SubAccount[]
-    // }
 }
 
-const CreateSubAccountButton = async ({ className, id, user, agencyId }: Props) => {
+const CreateSubAccountButton = async ({ className, id, user }: Props) => {
     const { setOpen } = useModal()
     const agencyDetails = user.Agency
 
@@ -41,19 +36,7 @@ const CreateSubAccountButton = async ({ className, id, user, agencyId }: Props) 
 
 
     if(!agencyDetails) return
-    //console.log(agency?.SubAccount?.length)
-
-    // if(agency?.SubAccount?.length >= 3) {
-    //     return (
-    //         toast({
-    //             title: 'Upgrade to a higer plan',
-    //             description: 'cant create subaccount',
-    //           })
-    //     )
-    // }
-
-// const starter = await agencySubscription(agencyId)
-
+    
   return (
    <Button 
          className={clsx(twMerge("w-full flex gap-4", className)
@@ -81,4 +64,3 @@ const CreateSubAccountButton = async ({ className, id, user, agencyId }: Props) 
 
 export default CreateSubAccountButton
 
-//twMerge("w-full flex gap-4", className)
