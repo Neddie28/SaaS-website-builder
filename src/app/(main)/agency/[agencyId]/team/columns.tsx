@@ -42,7 +42,7 @@ import { deleteUser, getUser } from '@/lib/queries'
 import { useToast } from '@/components/ui/use-toast'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { UsersWithAgencySubAccountPermissionsSidebarOptions } from '@/lib/types'
+import { UsersWithAgencySubAccountPermissionsSidebarOptions } from '@/lib/type'
 import CustomModal from '@/components/global/custom-modal'
 
 export const columns: ColumnDef<UsersWithAgencySubAccountPermissionsSidebarOptions>[] =

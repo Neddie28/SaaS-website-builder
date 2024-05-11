@@ -36,7 +36,7 @@ import {
 } from '@/components/ui/hover-card'
 import { toast } from '@/components/ui/use-toast'
 import { deleteTicket, saveActivityLogsNotification } from '@/lib/queries'
-import { TicketWithTags } from '@/lib/types'
+import { TicketWithTags } from '@/lib/type'
 import { useModal } from '@/providers/modal-provider'
 import { Contact2, Edit, MoreHorizontalIcon, Trash, User2 } from 'lucide-react'
 import { useRouter } from 'next/navigation'
