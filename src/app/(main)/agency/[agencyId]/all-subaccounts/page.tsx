@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import DeleteButton from './_components/delete-button'
-import CreateSubAccountButton from './_components/create-subaccount-btn'
+import { CreateSubaccountButton } from './_components/create-subaccount-btn'
 
 type Props = {
     params: {
@@ -22,7 +22,7 @@ const Page = async ({ params }: Props) => {
   return (
     <AlertDialog>
         <div className='flex flex-col'>
-            <CreateSubAccountButton 
+            <CreateSubaccountButton 
                 user={user}
                 id={params.agencyId}
                 className='w-[200px] self-end m-6'
