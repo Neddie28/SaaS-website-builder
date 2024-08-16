@@ -36,7 +36,6 @@ const MediaCard = ({ file }: Props) => {
     const [loading, setLoading] = useState(false)
     const router = useRouter()
 
-
   return (
     <AlertDialog>
     <DropdownMenu>
