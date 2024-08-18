@@ -3,8 +3,8 @@ import { getPipelines } from '@/lib/queries'
 import { Prisma } from '@prisma/client'
 import React, { useEffect, useMemo, useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader } from '../ui/card'
-
 import { Progress } from '../ui/progress'
+
 import {
   Select,
   SelectContent,
