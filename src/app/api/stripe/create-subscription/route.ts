@@ -67,7 +67,6 @@ export async function POST(req: Request) {
         //@ts-ignore
         clientSecret: subscription.latest_invoice.payment_intent.client_secret,
       })
-      
     }
   } catch (error) {
     console.log('🔴 Error', error)
