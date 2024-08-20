@@ -25,7 +25,7 @@ export async function POST(req: Request) {
           'Could not find the subscription Id to update the subscription.'
         )
       }
-      console.log('Updating the subscription')
+      console.log('Updating the subscription');
       const currentSubscriptionDetails = await stripe.subscriptions.retrieve(
         subscriptionExists.Subscription.subscriptionId
       )
