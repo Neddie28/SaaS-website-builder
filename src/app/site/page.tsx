@@ -16,7 +16,6 @@ import { stripe } from '@/lib/stripe';
 import { cn } from '@/lib/utils';
 
 export default async function Home() {
-
   const prices = await stripe.prices.list({
     // https://dashboard.stripe.com/test/products/prod_PZOtnzITgi4ebX
     product: process.env.NEXT_PUBLIC_PRODUCT_ID || 'prod_Ps7naFjn9jtqxs', // product id from plura product catalog page
