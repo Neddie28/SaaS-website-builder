@@ -35,7 +35,6 @@ return redirect(`/subaccount/${getFirstSubaccountWithAccess.subAccountId}`)
 }
 
   return <Unauthorized />   
-  
 }
 
 export default SubAccountMainPage
