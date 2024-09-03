@@ -170,7 +170,6 @@ export const verifyAndAcceptInvitation = async () => {
         subaccountId: undefined,
     })
 
-
     if(userDetails) {
         await clerkClient.users.updateUserMetadata(user.id, {
             privateMetadata: {
