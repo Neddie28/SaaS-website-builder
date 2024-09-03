@@ -10,7 +10,6 @@ import { z } from "zod";
 import { TrainFrontTunnelIcon } from "lucide-react";
 import { revalidatePath } from "next/cache";
 
-
 export const getAuthUserDetails = async () => {
     const user = await currentUser()
     if(!user) {
